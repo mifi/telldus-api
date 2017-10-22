@@ -1,6 +1,6 @@
 {
   "name": "telldus-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node API for Telldus Live and Telldus Local devices",
   "main": "index.js",
   "scripts": {
