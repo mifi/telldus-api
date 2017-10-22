@@ -1,0 +1,28 @@
+{
+  "name": "telldus-api",
+  "version": "1.0.0",
+  "description": "Node API for Telldus Live and Telldus Local devices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mikael Finstad <finstaden@gmail.com>",
+  "repository": "mifi/telldus-api",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  },
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "debug": "^3.1.0",
+    "node-fetch": "^1.7.3",
+    "oauth-1.0a": "^2.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}
