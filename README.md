@@ -47,6 +47,8 @@ const devices = await api.listDevices();
 console.log(devices);
 ```
 
+The accessToken will be auto refreshed as long as there are API calls.
+
 # API
 See `class Api` in [index.js](https://github.com/mifi/telldus-api/blob/master/index.js)
 
