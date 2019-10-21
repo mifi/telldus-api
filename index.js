@@ -4,6 +4,7 @@ const assert = require('assert');
 const crypto = require('crypto');
 const querystring = require('querystring');
 const https = require('https');
+const http = require('http');
 const Debug = require('debug');
 const nodeFetch = require('node-fetch');
 const OAuth = require('oauth-1.0a');
@@ -33,7 +34,7 @@ const supportedMethods = Object.values(commands).reduce((memo, num) => memo + nu
 async function fetch(url, opts) {
   return nodeFetch(url, {
     ...opts,
-    agent: new https.Agent({ minVersion: 'TLSv1' }),
+    agent: ({ protocol }) => (protocol === 'http:' ? new http.Agent() : new https.Agent({ minVersion: 'TLSv1' })),
   });
 }
 
