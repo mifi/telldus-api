@@ -10,7 +10,7 @@
   "repository": "mifi/telldus-api",
   "license": "MIT",
   "engines": {
-    "node": ">=8"
+    "node": ">=8.3"
   },
   "files": [
     "index.js"
