@@ -204,7 +204,7 @@ class LiveApi extends Api {
   }
 
   async request({ method = 'GET', path, qs }) {
-    const telldusLiveBaseUrl = 'https://api.telldus.com/json';
+    const telldusLiveBaseUrl = 'https://pa-api.telldus.com/json';
 
     const {
       key,
